@@ -39,7 +39,8 @@ app.use(session({ secret: "12345anand", resave: false, saveUninitialized: false 
    .catch(err => console.log('MongoDB connection error:', err));
 
  app.use(express.static(path.join(__dirname, 'Project- Transportation main', 'public')));
- app.set('views', path.join(__dirname, 'Project- Transportation main', 'views'));
+//  app.set('views', path.join(__dirname, 'Project- Transportation main', 'views'));
+ app.set('views', path.join(__dirname, 'views'));
  app.set('view engine', 'ejs')
  // Routes
  app.get('/', (req, res) => res.render('index', { currentPage: 'home' }));
