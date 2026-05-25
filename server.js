@@ -7,8 +7,8 @@
  const session = require("express-session");
  const bodyParser=require('body-parser')
  const User = require('./models/UserLogin');
-  const ensureAuthenticated = require('./Project- Transportation main/middleware/auth'); 
 
+ const auth = require('./middleware/auth');
 const methodOverride = require("method-override");
 
  const path = require('path');
