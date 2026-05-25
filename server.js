@@ -8,7 +8,7 @@
  const bodyParser=require('body-parser')
  const User = require('./models/UserLogin');
 
- const ensureAuthenticated = require('./middleware/auth');
+ const {ensureAuthenticated} = require('./middleware/auth');
 const methodOverride = require("method-override");
 
  const path = require('path');

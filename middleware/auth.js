@@ -8,4 +8,4 @@ function ensureAuthenticated(req, res, next) {
 }
 
 // module.exports = {ensureAuthenticated;
-const ensureAuthenticated = require('./middleware/auth');
+module.exports = { ensureAuthenticated };
